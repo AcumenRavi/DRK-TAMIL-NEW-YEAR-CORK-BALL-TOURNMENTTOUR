@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Village Cricket Tournament</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>DRK CORK BALL TOURNMENT 2025</h1>
+        <p>Welcome to the Village Cricket Tournament! Join us for a 10-over knock-out competition with exciting prizes!</p>
+    </header>
+
+    <section id="tournament-details">
+        <h2>Tournament Details</h2>
+        <ul>
+            <li><strong>Umpire Decision is Final</strong></li>
+            <li><strong>Match Format:</strong> 10 overs per team</li>
+            <li><strong>Powerplay:</strong> 2 overs at the start, second powerplay can be chosen after the 7th over</li>
+            <li><strong>Ball:</strong> Vickey Cork Ball</li>
+            <li><strong>Organizing Team:</strong> Not participating, directly in the final</li>
+            <li><strong>Entry Fee:</strong> ₹2000 per team</li>
+            <li><strong>Prizes:</strong>
+                <ul>
+                    <li>1st Prize: ₹7000</li>
+                    <li>2nd Prize: ₹3000</li>
+                    <li>3rd Prize: ₹2000 (for 3rd place match)</li>
+                </ul>
+            </li>
+            <li><strong>Third Place Match:</strong> 3-over match with all 3 overs as powerplay</li>
+            <li><strong>Organizing Team:</strong> Will not provide the match ball</li>
+        </ul>
+    </section>
+
+    <section id="match-schedule">
+        <h2>Match Schedule</h2>
+        <table>
+            <tr>
+                <th>Match</th>
+                <th>Teams</th>
+                <th>Date</th>
+                <th>Time</th>
+            </tr>
+            <tr>
+                <td>Round 1 - Match 1</td>
+                <td>Team 1 vs Team 8</td>
+                <td>April 10th</td>
+                <td>10:00 AM</td>
+            </tr>
+            <tr>
+                <td>Round 1 - Match 2</td>
+                <td>Team 2 vs Team 7</td>
+                <td>April 10th</td>
+                <td>01:00 PM</td>
+            </tr>
+            <tr>
+                <td>Round 1 - Match 3</td>
+                <td>Team 3 vs Team 6</td>
+                <td>April 12th</td>
+                <td>10:00 AM</td>
+            </tr>
+            <tr>
+                <td>Round 1 - Match 4</td>
+                <td>Team 4 vs Team 5</td>
+                <td>April 12th</td>
+                <td>01:00 PM</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="register">
+        <h2>Register Your Team</h2>
+        <form>
+            <label for="team-name">Team Name:</label><br>
+            <input type="text" id="team-name" name="team-name"><br><br>
+            <label for="team-members">Team Members:</label><br>
+            <textarea id="team-members" name="team-members"></textarea><br><br>
+            <input type="submit" value="Register Now">
+        </form>
+    </section>
+
+    <footer>
+        <p>Contact us at: villagecrickettournament@example.com</p>
+    </footer>
+</body>
+</html>
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2C3E50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+    font-family: 'Verdana', sans-serif;
+}
+
+header p {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+/* Tournament Details */
+#tournament-details {
+    background-color: #ECF0F1;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+#tournament-details h2 {
+    font-size: 2em;
+    color: #2980B9;
+    font-family: 'Georgia', serif;
+}
+
+#tournament-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#tournament-details ul li {
+    font-size: 1.2em;
+    padding: 5px 0;
+}
+
+/* Match Schedule */
+#match-schedule {
+    margin: 20px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#match-schedule h2 {
+    font-size: 2em;
+    color: #E74C3C;
+    font-family: 'Georgia', serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #2C3E50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #F2F2F2;
+}
+
+/* Register Section */
+#register {
+    background-color: #D5DBDB;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+#register h2 {
+    font-size: 2em;
+    color: #27AE60;
+    font-family: 'Georgia', serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label, form textarea, form input[type="text"] {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+form input[type="submit"] {
+    background-color: #27AE60;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+form input[type="submit"]:hover {
+    background-color: #1E8449;
+}
+
+/* Footer */
+footer {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
